@@ -1,0 +1,9 @@
+\babel@toc {polish}{}\relax 
+\contentsline {section}{\numberline {1}Samorząd Uczniowski}{2}{section.1}%
+\contentsline {section}{\numberline {2}Senat}{3}{section.2}%
+\contentsline {section}{\numberline {3}Trybunał Regulaminowy}{9}{section.3}%
+\contentsline {section}{\numberline {4}Prezydent i Rząd}{10}{section.4}%
+\contentsline {section}{\numberline {5}Rzecznik Praw Ucznia}{13}{section.5}%
+\contentsline {section}{\numberline {6}Opiekun Samorządu}{15}{section.6}%
+\contentsline {section}{\numberline {7}Zmiana Regulaminu}{16}{section.7}%
+\contentsline {section}{\numberline {8}Przepisy przejściowe i końcowe}{16}{section.8}%

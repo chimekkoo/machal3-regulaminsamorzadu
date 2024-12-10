@@ -1,0 +1,535 @@
+\documentclass[14pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Tutaj można zmienić grubość marginesu.
+\usepackage[left=2cm, top=1cm, right=2cm, bottom=0.5cm, includeheadfoot, headheight=50pt, a4paper]{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{amssymb}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{color}
+\usepackage{tabularray}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{mathtools}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{enumitem}
+\usetikzlibrary{graphs}
+\usepackage {graphicx }
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[R]{\nouppercase{\leftmark\hfill\rightmark}}
+\fancyfoot[c]{Strona \thepage}
+
+
+\newcounter{podpunktyCounter}
+
+
+\newenvironment{podpunkty}
+{%
+	\begin{list}{\arabic{podpunktyCounter})}%
+		{%
+			\usecounter{podpunktyCounter}
+			\setlength{\itemsep}{1pt}
+			\setlength{\topsep}{3pt}
+		}%
+	}%
+	{\end{list}}
+
+% Środowisko "ustepy"
+\newenvironment{ustepy}{%
+	\begin{enumerate}[leftmargin=1.5em, itemindent=1pt, labelwidth=1em, itemsep=5pt]
+	}{%
+	\end{enumerate}
+}
+
+
+
+\begin{document}
+	\thispagestyle{empty}
+	\vspace*{1cm}
+	\begin{center}
+		\Huge
+		\textbf{Regulamin Samorządu Uczniowskiego XIV Liceum Ogólnokształcącego im. Stanisława Staszica w Warszawie}\\
+		\vspace{0.5cm}
+		\large
+		Uchwalony przez Senat głosowaniu tajnym, równym i powszechnym w dniu (...) na podstawie § 33 Regulaminu Samorządu Szkolnego XIV Liceum Ogólnokształcącego im. Stanisława Staszica w Warszawie\\
+
+	\vspace{2cm}
+	
+	\includegraphics[scale=0.6]{logostaszic.jpg}
+		\end{center}
+	
+	\newpage
+	\tableofcontents
+\section{Samorząd Uczniowski}
+\subsection*{Artykuł 1}
+Ilekroć w Regulaminie jest mowa o:
+\begin{podpunkty}
+	\item Samorządzie – rozumie się przez to Samorząd Uczniowski XIV Liceum Ogólnokształcącego im. Stanisława Staszica w Warszawie;
+	\item Szkole – rozumie się przez to XIV Liceum Ogólnokształcące im. Stanisława Staszica w Warszawie, szkołę ponadpodstawową prowadzoną przez Miasto st. Warszawę – Dzielnicę Ochota;
+	\item Uczniu – rozumie się przez to osobę posiadającą status ucznia Szkoły;
+	\item Regulaminie – rozumie się przez to niniejszy Regulamin;
+Statucie – rozumie się przez to Statut Szkoły.
+\end{podpunkty}
+
+\subsection*{Artykuł 2}
+Samorząd Uczniowski (zwany dalej Samorządem) tworzą wszyscy uczniowie Szkoły.
+
+\subsection*{Artykuł 3 }
+Organy Samorządu są jedynymi reprezentantami ogółu uczniów.
+
+\subsection*{Artykuł 4 }
+Organy Samorządu działają na podstawie i w granicach przepisów prawa, Statutu i Regulaminu.
+
+\subsection*{Artykuł 5}
+Przyznane przez prawo uprawnienia Samorząd wykonuje samodzielnie.
+
+\subsection*{Artykuł 6 }
+Podstawowymi celami Samorządu są:
+\begin{podpunkty}
+\item ochrona i reprezentacja interesów uczniów;
+\item organizacja życia szkolnego, w szczególności w sferze kulturalnej i rozrywkowej;
+\item ochrona i promocja wartości obywatelskich, społecznych - w tym tolerancji - które łączą uczniów;
+\item wnioskowanie i wydawanie opinii w sprawach związanych z funkcjonowaniem Szkoły.
+\end{podpunkty}
+
+\subsection*{Artykuł 7}
+Organami Samorządu są:
+\begin{podpunkty}
+	\item Senat;
+	\item Prezydent Samorządu;
+	\item Rząd.
+\end{podpunkty}
+
+\subsection*{Artykuł 8}
+\begin{ustepy}
+\item W toku działalności organy Samorządu wydają pisemne akty urzędowe, takie jak postanowienia, uchwały, zarządzenia, oświadczenia, stanowiska i opinie.
+\item Akty te muszą zostać opublikowane na oficjalnej stronie Szkoły. 
+\item Marszałek Senatu posiada dodatkowe uprawnienia do redagowania strony internetowej Szkoły. Może je wykorzystywać jedynie w celach i w zakresie swoich kompetencji przewidzianych w niniejszym Regulaminie.
+\end{ustepy}
+
+\subsection*{Artykuł 9}
+Osoby, które podejmują się pracy w organach Samorządu, dobrowolnie przyjmują na siebie współodpowiedzialność za jego wizerunek i skuteczność działania. 
+
+\section{Senat}
+\subsection*{Artykuł 10 - Wstęp}
+Senat składa się z reprezentantów wybranych w sposób demokratyczny na forum swoich klas. Senat jest władzą uchwałodawczą Samorządu. Wyznacza podstawowe kierunki działalności Samorządu. Członkowie Senatu pośredniczą w kontaktach między organami Samorządu a uczniami.
+\subsection*{Artykuł 11 - Senatorzy}
+\begin{ustepy}
+	\item Każda klasa ma prawo do 1 reprezentanta w Senacie, dalej zwanego Senatorem.
+	\item Klasa może swobodnie zmieniać swojego reprezentanta.
+	\item Klasa ma prawo zrezygnować z reprezentacji w Senacie.
+	\item Klasa informuje o swoich decyzjach związanych z reprezentacją w Senacie Marszałka Senatu. Decyzje te są skuteczne z chwilą poinformowania o nich Marszałka Senatu.
+	\item Prawa i obowiązki Senatora może wykonywać zastępca. Senator decyduje o powołaniu zastępcy i czasie pełnienia przez niego obowiązków Senatora.
+	\item Senator ma obowiązek brać udział w posiedzeniach Senatu. Senator, który nie będzie obecny i nie będzie w stanie oddelegować nikogo w zastępstwie na posiedzenie Senatu, ma obowiązek usprawiedliwić swoją nieobecność. Senator, który regularnie bez uzasadnienia nie bierze udziału w posiedzeniach Senatu lub nie wywiązuje się z reszty swoich obowiązków, może na wniosek Marszałka Senatu zostać ukarany zgodnie z § 51 Statutu lub zostać odwołany z pełnionego stanowiska.
+	\item Senator powinien stosować się do sposobu komunikacji określonego przez Senat. 
+	\item Senator potwierdza swoją obecność na posiedzeniu Senatu podpisem na liście obecności.
+	\item Senator ma obowiązek informować swoją klasę o aktywności organów Samorządu Uczniowskiego.
+	\item Kadencja Senatu trwa od pierwszego posiedzenia Senatu do dnia zakończenia danego roku szkolnego.
+\end{ustepy}
+
+\subsection*{Artykuł 12 - Pierwsze posiedzenie Senatu}
+\begin{ustepy}
+	\item W nowym roku szkolnym pierwsze posiedzenie Senatu zwołuje Prezydent Samorządu. Organizuje je w terminie do 4 tygodni od rozpoczęcia roku szkolnego i nie wcześniej niż 2 tygodnie po rozpoczęciu roku szkolnego.
+	\item Pierwsze posiedzenie Senatu otwiera Prezydent Samorządu.
+	\item Prezydent Samorządu prowadzi obrady do czasu wyboru Marszałka Senatu
+	\item Senat wybiera spośród swoich członków Marszałka Senatu. Proces ten prowadzi Prezydent Samorządu.
+	\item Marszałkiem Senatu zostaje kandydat, który uzyskał największą liczbę głosów przy obecności co najmniej połowy Senatorów. W przypadku, gdy kandydaci z największą liczbą głosów otrzymają ich tyle samo, procedura głosowania zostaje powtórzona z ich udziałem aż do wyłonienia Marszałka Senatu. 
+	\item Nowo wybrany Marszałek Senatu obejmuje przewodnictwo obrad.
+	\item Marszałek Senatu przeprowadza wybór spośród Senatorów 2 Wicemarszałków Senatu i Sekretarza Samorządu.
+	\item Wicemarszałkami Senatu zostają kandydaci, którzy uzyskali kolejno największą liczbę głosów w głosowaniu. W przypadku, gdy wygrywający kandydaci otrzymają tyle samo głosów, procedura głosowania zostaje powtórzona z ich udziałem aż do wyłonienia Wicemarszałków Senatu. 
+	\item Sekretarzem Samorządu zostaje kandydat, który uzyskał największą liczbę głosów w głosowaniu nad wyborem Sekretarza Samorządu.
+	\item Na swoim pierwszym posiedzeniu Senat poprzez głosowanie ustala oficjalny sposób komunikacji na dany rok. 
+	\item Senat może zmienić oficjalny sposób komunikacji podejmując odpowiednią uchwałę.
+\end{ustepy}
+
+\subsection*{Artykuł 13 - Marszałek Senatu}
+\begin{ustepy}
+	\item Marszałek Senatu:
+	\begin{podpunkty}
+		\item zwołuje posiedzenia Senatu i określa, gdzie się ono odbędzie na terenie szkoły;
+		\item przewodniczy obradom Senatu;
+		\item czuwa nad tokiem i terminowością prac Senatu i jego organów;
+		\item kieruje pracami Prezydium Senatu;
+		\item nadaje bieg inicjatywom uchwałodawczym;
+		\item podejmuje inne czynności wynikające z Regulaminu Senatu;
+		\item wykonuje inne zadania przewidziane w Statucie i uchwałach.	
+	\end{podpunkty}
+	\item Marszałka Senatu zastępują Wicemarszałkowie Senatu. Marszałek określa zakres zastępstwa.
+	\item Marszałek Senatu wraz z Sekretarzem Samorządu sporządza protokoły z posiedzeń Senatu. Protokół z posiedzenia Senatu zawiera w szczególności: 
+	\begin{podpunkty}
+		\item teksty uchwał podjętych podczas posiedzenia;
+		\item wyniki głosowań;
+		\item listę obecności.
+	\end{podpunkty}
+	Jeżeli jedno posiedzenie Senatu trwałoby dłużej niż jeden dzień, protokół jest sporządzany za każdy dzień z osobna.
+	\item Marszałek Senatu wraz z Sekretarzem Samorządu publikuje protokół z posiedzenia Senatu na stronie internetowej Szkoły najpóźniej 2 dni robocze po zakończeniu obrad. Jeżeli protokół nie zostanie opublikowany w wyznaczonym terminie przez Marszałka Senatu, każdy z Wicemarszałków Senatu może podjąć odpowiednie działania.
+	\item Marszałek Senatu może zostać odwołany uchwałą Senatu na wniosek złożony przez co najmniej 5 Senatorów.
+	\item Wniosek o podjęcie uchwały Senatu w sprawie odwołania Marszałka Senatu musi zostać poddany pod głosowanie w ciągu 4 dni roboczych od złożenia wniosku. 
+	\item Powtórny wniosek o podjęcie uchwały Senatu w sprawie odwołania Marszałka Senatu może być zgłoszony nie wcześniej niż po upływie 1 miesiąca od dnia zgłoszenia poprzedniego wniosku.
+	\item W przypadku gdy Marszałek Senatu:
+	\begin{podpunkty}
+		\item rezygnuje ze swojej funkcji,
+		\item traci mandat Senatora lub
+		\item Senat odwołuje go z funkcji Marszałka Senatu
+	\end{podpunkty}
+	jego prawa i obowiązki wynikające z Regulaminu Senatu, Statutu oraz uchwał przejmuje najstarszy wiekiem Wicemarszałek Senatu. Wykonuje je do czasu wybrania nowego Marszałka Senatu w trybie przewidzianym w art. 12 ust. 3-5. Nowy Marszałek Senatu powinien zostać wybrany w ciągu 7 dni roboczych.
+	\item W przypadku, gdy wszyscy członkowie Prezydium Senatu zostaną odwołani, złożą rezygnację lub utracą mandat Senatora, prawa i obowiązki wynikające z Regulaminu Senatu, Statutu i uchwał wykonuje Prezydent Samorządu. Funkcję tę pełni do czasu wybrania nowego Marszałka Senatu w trybie przewidzianym w art. 12 ust. 3-5. Nowe Prezydium Senatu powinno zostać wybrane w ciągu 7 dni roboczych.
+\end{ustepy}
+\subsection*{Artykuł 14 - Prezydium Senatu}
+\begin{ustepy}
+	\item Prezydium Senatu składa się z Marszałka Senatu, 2 Wicemarszałków Senatu oraz Sekretarza Senatu.
+	\item Prezydium Senatu jest organem doradczym Marszałka Senatu i pomaga mu w wykonywaniu jego obowiązków. 
+	\item Członkowie Prezydium Senatu mają prawo do rezygnacji z zachowaniem funkcji Senatora.
+	\item Do zadań Sekretarza Samorządu należy: 
+	\begin{podpunkty}
+		\item przechowywanie dokumentacji Samorządu;
+		\item pomoc Marszałkowi Senatu w przygotowywaniu porządku obrad;
+		\item pomoc Marszałkowi Senatu w tworzeniu sprawozdań z posiedzeń Senatu.
+	\end{podpunkty}
+	\item Wicemarszałek lub Sekretarz Senatu może zostać odwołany uchwałą na wniosek złożony przez co najmniej 5 Senatorów.
+	\item Powtórny wniosek o podjęcie uchwały Senatu w sprawie odwołania tego samego Wicemarszałka lub Sekretarza Senatu może być zgłoszony nie wcześniej niż po upływie 1 miesiąca od dnia zgłoszenia poprzedniego wniosku.
+	\item W przypadku odwołania, złożenia rezygnacji, lub utraty mandatu Senatora nowy Wicemarszałek lub Sekretarz Senatu powinien zostać wybrany zgodnie z art. 12 ust. 7-9 w ciągu 14 dni roboczych.
+	\item Członkowie Prezydium Senatu odpowiadają przed Senatem za prawidłowe wypełnianie obowiązków.
+\end{ustepy}
+
+\subsection*{Artykuł 15 - Zwoływanie posiedzeń Senatu}
+\begin{ustepy}
+	\item Posiedzenia Senatu zwołuje, otwiera, prowadzi i zamyka Marszałek Senatu.
+	\item Marszałek Senatu powinien zadbać, aby posiedzenia Senatu odbywały się z częstotliwością, która pozwala na efektywną pracę Senatu.
+	\item Marszałek Senatu najpóźniej na 3 dni przed posiedzeniem Senatu przekazuje Senatorom:
+	\begin{podpunkty}
+		\item datę posiedzenia; 
+		\item szczegółowy porządek obrad; 
+		\item treść projektów uchwał wraz z uzasadnieniami.
+	\end{podpunkty}
+	\item Senatorzy mogą zgłaszać nowe projekty uchwał odnośnie spraw, które przewiduje porządek obrad. Mogą też w trakcie posiedzenia Senatu zgłaszać poprawki do projektów.
+	\item Marszałek Senatu powinien zwołać posiedzenie Senatu na wniosek co najmniej 3 Senatorów lub Prezydenta Samorządu. W informacji o posiedzeniu musi podać szczegółowy porządek obrad zgodny z wnioskiem. Jeżeli mimo wniosku Marszałek Senatu nie zwoła posiedzenia Senatu w ciągu 10 dni roboczych od złożenia wniosku, każdy z Wicemarszałków ma prawo i obowiązek zwołać posiedzenie Senatu zgodnie z wnioskiem złożonym do Marszałka Senatu. Na takim posiedzeniu Wicemarszałek, który zwołał to posiedzenie, wykonuje prawa i obowiązki Marszałka Senatu.
+	\item Posiedzenia nadzwyczajne zwołuje Marszałek Senatu z własnej inicjatywy lub na wniosek 3 Senatorów, Prezydenta Samorządu lub Rzecznika Praw Ucznia.
+	\item Wniosek, o którym mowa w ust. 4, musi zawierać uzasadnienie. Jeżeli wniosek dotyczy zwołania posiedzenia nadzwyczajnego, uzasadnienie powinno odnosić się w szczególności do jego pilnego charakteru.
+	\item W przypadkach zwołania posiedzenia nadzwyczajnego, w szczególnie uzasadnionych wypadkach termin, o którym mowa w ust. 2, może ulec skróceniu.
+	\item Posiedzenie nadzwyczajne powinno odbyć się jak najszybciej, nie później niż w ciągu 7 dni roboczych od złożenia wniosku.
+\end{ustepy}
+\subsection*{Artykuł 16 - Posiedzenia Senatu}
+\begin{ustepy}
+	\item Posiedzenia Senatu są otwarte dla wszystkich uczniów Szkoły. W trakcie posiedzenia Marszałek Senatu może poprosić osobę, która nie jest Senatorem, o wyrażenie opinii na wskazany temat.
+	\item Osoby obecne na posiedzeniu, które nie są Senatorami, nie mają prawa głosu w trakcie głosowań Senatu. 
+	\item Posiedzenia odbywają się w auli Szkoły albo w sali wskazanej przez Marszałka Senatu.
+	\item Przedstawiciel grupy uchwałodawczej ma prawo brać udział w dyskusji i odpowiadać na ewentualne pytania.
+	\item W posiedzeniach Senatu może uczestniczyć Dyrektor Szkoły.
+	\item Marszałek Senatu udziela głosu Dyrektorowi Szkoły na jego życzenie, zgodnie z porządkiem obrad. 
+	\item Wskazane jest, aby w obradach Senatu wzięli udział członkowie Rządu.
+	\item Opiekun Samorządu może brać udział w posiedzeniach Senatu.
+	\item Marszałek Senatu może udzielić głosu Prezydentowi Samorządu, członkom Rządu lub Opiekunowi Samorządu.
+	\item Pytania w sprawach bieżących mogą być zadawane w formie ustnej przez Senatorów obecnemu na posiedzeniu Senatu Prezydentowi Samorządu lub członkom Rządu i wymagają od nich bezpośredniej odpowiedzi.
+\end{ustepy}
+\subsection*{Artykuł 17 - Inicjatywa uchwałodawcza}
+\begin{ustepy}
+	\item Prawo inicjatywy uchwałodawczej przysługuje Senatorom, Prezydentowi Samorządu, Rzecznikowi Praw Ucznia oraz grupie co najmniej 25 uczniów.
+	\item Projekty uchwał składa się w formie pisemnej lub elektronicznej Marszałkowi Senatu.
+	\item Do projektu uchwały dołącza się uzasadnienie, które powinno wyjaśniać potrzebę przyjęcia uchwały.
+	\item W przypadku braku uzasadnienia Marszałek Senatu zwraca projekt wnioskodawcy, aby ten dołączył uzasadnienie.
+	\item Marszałek Senatu włącza projekt do porządku obrad posiedzenia Senatu, które musi się odbyć w ciągu 14 dni roboczych od złożenia projektu uchwały wraz z uzasadnieniem..
+	\item Jeżeli w ciągu najbliższych 14 dni roboczych posiedzenie Senatu nie zostało zaplanowane, Marszałek zwołuje posiedzenie Senatu zgodnie z art. 15 ust. 3.
+\end{ustepy}
+\newpage
+\subsection*{Artykuł 18 - Porządek obrad}
+\begin{ustepy}
+	\item Posiedzenie prowadzi Marszałek Senatu lub wyznaczony przez niego Wicemarszałek. Jeżeli Marszałek jest nieobecny i nie wyznaczył prowadzącego, prowadzącym zostaje jeden z Wicemarszałków.
+	\item Prowadzący obrady pilnuje, aby przebiegały one zgodnie z ustalonym porządkiem obrad.
+	\item Senat prowadzi dyskusję, w ramach której Senatorowie mogą proponować ewentualne poprawki do procedowanych dokumentów, jak również zgłaszać nowe projekty uchwał w sprawie objętych ustalonym porządkiem obrad. 
+	\item Prowadzący obrady Senatu udziela głosu Senatorom w sprawach objętych ustalonym porządkiem obrad, aż do momentu zamknięcia dyskusji. 
+	\item Po zamknięciu dyskusji prowadzący obrady oznajmia, że Senat przystępuje do głosowania.
+	\item Prowadzący obrady może wykluczyć z obrad Senatora, gdy ten rażąco nadużywa swoich praw Senatora w toku posiedzenia Senatu, co istotnie utrudnia obrady. Z zastrzeżeniem ust. 7, wykluczony Senator powinien natychmiast opuścić miejsce obrad. Z zastrzeżeniem ust. 7, wykluczenie Senatora - jeżeli prowadzący obrady nie zdecyduje inaczej - obowiązuje do końca danego posiedzenia Senatu. Wykluczony Senator nie bierze udziału w głosowaniach przeprowadzanych na tym posiedzeniu Senatu. Aby uchwały podejmowane przez Senat były ważne przyjmuje się, że mandat wykluczonego Senatora nie został obsadzony. 
+	\item W kwestiach dotyczących organizacji obrad od decyzji prowadzącego obrady przysługuje odwołanie do Senatu, które podlega natychmiastowemu rozpatrzeniu i rozstrzygnięciu zwykłą większością głosów przez Senat. Odwołanie jest zgłaszane ustnie na forum Senatu. Odwołanie przysługuje w szczególności od decyzji prowadzącego obrady o wykluczeniu Senatora. Wykluczony Senator może złożyć odwołanie i wziąć udział w jego rozpatrzeniu i rozstrzygnięciu przed opuszczeniem miejsca obrad.
+\end{ustepy}
+
+\subsection*{Artykuł 19 - Uchwały}
+\begin{ustepy}
+	\item Uchwały Senatu są podstawą działalności organów Samorządu.
+	\item Uchwały Senatu są wiążące dla Prezydenta Samorządu, członków Rządu oraz Komisji Senackich.
+	\item Uchwały Senatu mogą dotyczyć wszystkich obszarów działalności Samorządu. Wyjątkiem są kwestie obsady stanowisk, które określa Regulamin.
+	\item Uchwały Senatu wchodzą w życie wraz z opublikowaniem ich na stronie internetowej Szkoły. Nie dotyczy to uchwał Senatu w kwestiach organizacji obrad.
+	\item Głosowania nad uchwałami są jawne i odbywają się przez podniesienie ręki. Głosy zlicza Sekretarz Samorządu, a w razie jego nieobecności Senator wyznaczony przez prowadzącego obrady.
+	\item Co najmniej 15 Senatorów może złożyć ustny wniosek o ponowne przeliczenie głosów. W takiej sytuacji prowadzący obrady zarządza ponowne liczenie głosów. Jeżeli wnioskodawcy wyznaczyli Senatora do liczenia głosów, prowadzący ma obowiązek pozwolić mu uczestniczyć w liczeniu głosów. Kolejne liczenie głosów jest niemożliwe. 
+	\item Senatorowie głosują “za” albo “przeciw” uchwale. 
+	\item Za obecnych uważa się Senatorów podpisanych na liście obecności. Prowadzący obrady wraz z Sekretarzem Samorządu mają dopilnować, aby każdy Senator obecny w miejscu obrad podpisał się na liście obecności. Każdy Senator ma prawo wglądu w listę obecności na posiedzeniu Senatu.
+	\item Z zastrzeżeniem art. 19 ust. 10, Senat podejmuje uchwały zwykłą większością głosów w obecności co najmniej połowy urzędujących Senatorów.
+	\item Uchwały o szczególnym znaczeniu Senat podejmuje większością 2/3 głosów w obecności co najmniej połowy urzędujących Senatorów. 
+	\item Na wniosek co najmniej 12 Senatorów Marszałek Senatu przeprowadza głosowanie dot. przeprowadzenia Referendum Ogólnoszkolnego w sprawie rozpatrywanej przez Senat.
+	\item Głosowanie nad wnioskiem o Referendum odbywa się w Senacie na takich samych zasadach co głosowanie nad uchwałą. Decyzja o Referendum Senat podejmuje w formie uchwały o szczególnym znaczeniu.
+	\item Referendum odbywa się zamiast głosowania Senatu nad uchwałą.
+	\item Do uchwalenia uchwały potrzebna jest akceptacja co najmniej 1/2 głosów.
+	\item Senat powołuje Komisję Wyborczą, która ma przeprowadzić Referendum w ciągu 10 dni roboczych od jej powołania.
+	\item Komisja Wyborcza działa na tej samej podstawie co Komisja Wyborcza wybierana przy Wyborach na Prezydenta Samorządu.
+	\item Na wniosek co najmniej 5 Senatorów Marszałek Senatu przeprowadza w Senacie natychmiastowo głosowanie w sprawie zastosowania weta wobec inicjatywy Rządu. Senat podejmuje decyzję większością 2/3 głosów. Decyzja Senatu jest wiążąca dla Rządu. 
+\end{ustepy}
+\subsection*{Artykuł 20 - Prawa Senatorów}
+Senatorowie mają prawo:
+\begin{podpunkty}
+	\item występować na forum Senatu;
+	\item głosować na posiedzeniach Senatu;
+	\item występować z inicjatywą uchwałodawczą;
+	\item otrzymywać od Prezydenta Samorządu informacje o pracy Rządu.
+\end{podpunkty}
+
+\subsection*{Artykuł 21 - Komisje Senatu}
+\begin{ustepy}
+	\item Komisje Senatu są organem pomocniczym Senatu. Powoływane są do organizowania działalności Samorządu w określonej dziedzinie.
+	\item Komisję powołuje Senat w drodze uchwały, określając jednocześnie jej zadania, sposób działania i przewodniczącego.
+	\item Prezydent Samorządu jest zobowiązany udostępnić pomieszczenie Samorządu Komisji Senatu na posiedzenia komisji.
+	\item W skład komisji wchodzą chętni Senatorowie oraz osoby spoza Senatu zaaprobowane przez Senat. Przewodniczącym komisji może być wyłącznie Senator.
+	\item Komisja Senatu może uchwalić swój wewnętrzny regulamin prac.
+	\item Przewodniczący komisji zdaje sprawo z działalności komisji na prośbę senatu oraz po zakończeniu działalności komisji.
+\end{ustepy}
+\newpage
+\section{Trybunał Regulaminowy}
+\subsection*{Artykuł 22 - Trybunał Regulaminowy}
+\begin{ustepy}
+	\item Trybunał Regulaminowy składa się z:
+	\begin{podpunkty}
+		\item Prezydenta Samorządu;
+		\item Marszałka Senatu;
+		\item Wicemarszałków Senatu;
+		\item Rzecznika Praw Ucznia pod warunkiem, że Rzecznikiem jest uczeń.
+	\end{podpunkty}
+	\item Trybunał Regulaminowy ocenia ważność uchwały Senatu, odnośnie której wniesiony został protest, dokonuje wykładni przepisów Regulaminu oraz rozstrzyga spory kompetencyjne między organami Samorządu. Decyzje Trybunału są wiążące dla każdej ze stron.
+	\item Trybunał Regulaminowy przekazuje Senatowi uzasadnienie swojej wykładni przepisów Regulaminu.
+	\item Dokonana przez Trybunał Regulaminowy wykładnia obowiązuje w takim samym stopniu, jak przepisy Regulaminu.
+	\item Przeciwko ważności uchwały Senatu może być wniesiony protest do Trybunału Regulaminowego w ciągu 2 dni roboczych od ogłoszenia uchwały.
+	\item Podstawą protestów mogą być:
+	\begin{podpunkty}
+		\item niezgodności treści uchwały z postanowieniami Regulaminu;
+		\item rażące uchybienia formalne w procesie uchwałodawczym;
+		\item niezgodności treści uchwały ze Statutem;
+		\item niezgodności treści uchwały z polskim prawem;
+		\item łamanie przez uchwałę praw ucznia.
+	\end{podpunkty}
+	\item Decyzja jest podejmowana przez Trybunał Regulaminowy na drodze głosowania nie później niż 2 dni od wniesienia protestu. Trybunał Regulaminowy przekazuje Senatowi uzasadnienie swojej decyzji.
+	\item Przewodniczącym Trybunału Regulaminowego jest Marszałek Senatu. W przypadku gdy Marszałek składa protest, przewodniczącym Trybunału jest Prezydent Samorządu.
+	\item W przypadku, gdy osoba przewidziana jako członek Trybunału Regulaminowego składa protest, nie uczestniczy ona w rozpatrywaniu tego protestu.
+	\item Jeżeli członek Trybunału Regulaminowego nie może być obecny na posiedzeniu, wybiera on swojego reprezentanta spośród Uczniów.
+	\item Protest, o którym mowa w art. 20 ust. 5 Regulaminu, składa do Trybunału Regulaminowego Marszałek Senatu, Prezydent Samorządu, Rzecznik Praw Ucznia lub co najmniej 20 uczniów i jeden Senator.
+\end{ustepy}
+\newpage
+\section{Prezydent i Rząd}
+\subsection*{Artykuł 23 - Prezydent Samorządu}
+\begin{ustepy}
+	
+	\item Kompetencje Prezydenta Samorządu:
+	\begin{podpunkty}
+		\item Reprezentuje Samorząd w kontakcie z innymi organami Szkoły, instytucjami zewnętrznymi oraz opinią publiczną.
+		\item Prowadzi w imieniu Samorządu działalność na terenie Szkoły.
+		\item Ma prawo występować na forum Senatu.
+		\item Ma prawo wnioskować do Marszałka Senatu o zwołanie posiedzenia Senatu.
+		\item Ma prawo wydawać rozporządzenia i oświadczenia dotyczące prac Prezydenta Samorządu i Rządu.
+		\item Wykonuje inne zadania wskazane w Regulaminie.
+		\item Wykonuje inne czynności wskazane w uchwałach Senatu, niezbędne do ich realizacji.
+		\item Dysponuje i rozporządza pomieszczeniem Samorządu.
+		\item Dysponuje i rozporządza pieczęcią Samorządu.
+		\item Powołuje oraz odwołuje Komisarzy - Członków Rządu.
+		\item Powołuje i odwołuje swoich maksymalnie 2 Wiceprezydentów.
+		\item Ma prawo upoważnić Komisarzy do korzystania z wybranych uprawnień Prezydenta Samorządu.
+		\item Ma prawo złożyć rezygnację ze swojego urzędu.
+		\item Ma obowiązek poinformować wszystkie klasy o pierwszym zebraniu Senatu.
+	\end{podpunkty}
+	
+	\item Prezydent Samorządu ma obowiązek występować do Senatu z inicjatywą dotyczącą społeczności szkolnej. Każda inicjatywa Prezydenta powinna zostać przedstawiona Senatowi na Zgromadzeniu Szkolnym. Informację o inicjatywie Rząd może zgłosić do Marszałka Senatu, który ma obowiązek zorganizowania spotkania Zgromadzenia Szkolnego w ciągu 3 dni roboczych od zgłoszenia. Senat ma prawo weta w trakcie tego spotkania. Jeżeli spotkanie Zgromadzenia Szkolnego nie zostanie przeprowadzone w tym terminie, inicjatywa automatycznie zostaje zaakceptowana przez Senat, bez możliwości składania weta.
+\end{ustepy}
+\subsection*{Artykuł 24 - Wybory na Prezydenta Samorządu}
+\begin{ustepy}
+	\item Prezydentem Samorządu jest uczeń wybrany w wyborach powszechnych, równych i bezpośrednich, w głosowaniu tajnym, który nie jest senatorem w momencie obejmowania urzędu.
+	\item Za przygotowanie i przeprowadzenie wyborów Prezydenta Szkoły odpowiedzialna jest Komisja Wyborcza, którą wyłania Senat ze swojego składu w drodze uchwały.
+	\item Wybory na Prezydenta Samorządu przeprowadza się w styczniu każdego roku kalendarzowego.
+	\item W szczególnie uzasadnionych wypadkach Wybory można przeprowadzić w lutym.
+	\item Kadencja Prezydenta Samorządu, rozpoczyna się po zaprzysiężeniu Prezydenta Samorządu, które odbywa się na pierwszym posiedzeniu Senatu po wyborach, nie później niż 5 dni roboczych po ogłoszeniu wyników wyborów, a kończy się wraz z zaprzysiężeniem nowego Prezydenta Samorządu.
+	\item Szczegółowe przepisy dotyczące przeprowadzenia wyborów oraz zasad działania Komisji Wyborczej reguluje odrębna uchwała Senatu zwana Ordynacją o Wyborach Prezydenta Samorządu. Jest ona uchwalana przez Senat zwykłą większością głosów przy obecności co najmniej połowy Senatorów i publikowana na stronie internetowej Szkoły.
+	\item Ordynacja o Wyborach Prezydenta Samorządu jest uchwałą o szczególnym znaczeniu.
+\end{ustepy}
+\newpage
+\subsection*{Artykuł 25 - Komisja Wyborcza}
+\begin{ustepy}
+	\item Kompetencje Komisji Wyborczej:
+	\begin{podpunkty}
+		\item ustalanie Harmonogram Wyborów;
+		\item rozpatrywanie kandydatur pod względem formalnym;
+		\item ustalanie sposób przyjmowania kandydatur;
+		\item określanie sposobów przeprowadzenia wyborów;
+		\item organizacja debaty wyborczej;
+		\item ustalanie tematu eseju wyborczego;
+		\item ogłoszenie wyników wyborów.
+	\end{podpunkty}
+	\item Przewodniczącym Komisji Wyborczej jest Marszałek Senatu.
+	\item W celu wydania wiążącej decyzji Komisja Wyborcza zbiera się w pełnym składzie i przeprowadza głosowanie, w którym za wykonaniem decyzji opowiedziało się przynajmniej 3 członków.
+	\item Członkowie Komisji Wyborczej nie mogą kandydować w wyborach, ani prowadzić agitacji wyborczej.
+	\item Skład Komisji wyborczej może zostać zmieniony przez Uchwałę Senatu.
+	\end{ustepy}
+\subsection*{Artykuł 26 - Odwołanie lub rezygnacja Prezydenta Samorządu}
+\begin{ustepy}
+	\item Prezydenta Samorządu można odwołać w przypadku poważnego naruszenia Regulaminu, nieuzasadnionego niewykonania uchwały Senatu lub w przypadku ukarania na podstawie §53 Statutu.
+	\item Odwołanie Prezydenta Samorządu stwierdza Marszałek Senatu na podstawie uchwały Senatu, która precyzuje zarzuty wobec Prezydenta Samorządu, oraz opinii Opiekuna Samorządu, która potwierdza te zarzuty.
+	\item Jeżeli Prezydent Samorządu sam rezygnuje z pełnienia tej funkcji, zawiadamia o swojej decyzji Marszałka Senatu.
+	\item Uchwała Senatu, która precyzuje zarzuty wobec Prezydenta Samorządu lub Komisarza, jest uchwałą o szczególnym znaczeniu.
+	\item W przypadku odwołania lub rezygnacji Prezydenta Samorządu funkcję Prezydenta Samorządu pełni obecny Marszałek Senatu i zostają ogłoszone nowe wybory Prezydenta Samorządu.
+	\item Odwołany prezydent nie może ubiegać o reelekcję.
+\end{ustepy}
+
+\subsection*{Artykuł 27 - Rząd}
+Rząd jest organem władzy wykonawczej Samorządu. Wspiera pracę Prezydenta Samorządu i składa się z Prezydenta, Wiceprezydentów i Komisarzy (Artykuł 30).
+
+\subsection*{Artykuł 28}
+Jeżeli członek rządu lub Senator wykorzystuje pomieszczenie Samorządu niezgodnie z Regulaminem i Statutem, zostaje natychmiast odwołany ze swojego urzędu. Jeżeli dotyczy to Prezydenta, nowy Prezydent zostaje wybrany na drodze wyborów, a Rząd zostaje natychmiast rozwiązany. Postępowanie jest analogiczne do Artykułu 30, ust. 5 i 6.
+
+\subsection*{Artykuł 29 - Wiceprezydenci}
+\begin{ustepy}
+	\item Prezydent może mianować maksymalnie dwóch Wiceprezydentów. 
+	\item Wiceprezydenci są także komisarzami.
+	\item Wyznaczony przez Prezydenta Wiceprezydent Pełni obowiązki Prezydenta podczas jego nieobecność.
+\end{ustepy}
+\newpage
+\subsection*{Artykuł 30 - Komisarze}
+\begin{ustepy}
+	\item Członków Rządu, zwanych Komisarzami, powołuje Prezydent Samorządu według własnego uznania. Określa jednocześnie ich zadania. Może on powołać maksymalnie 15 Komisarzy. Prezydent ma obowiązek przedstawić Marszałkowi Senatu Listę powołanych Komisarzy w ciągu 10 dni roboczych od zaprzysiężenia Prezydenta. Lista Komisarzy musi być umieszczona na stronie internetowej Szkoły.
+	\item Kadencja Komisarzy, rozpoczyna się od momentu zaprzysiężenia Prezydenta Samorządu, które odbywa się na pierwszym posiedzeniu Senatu po wyborach. Kadencja kończy się wraz z zaprzysiężeniem nowego Prezydenta Samorządu.
+	\item Prezydent powołuje Komisarzy po swoim zaprzysiężeniu.
+	\item Za wypełnianie obowiązków przez Komisarzy odpowiada Prezydent Samorządu przed Senatem.
+	\item Senat ma prawo odwołać Komisarza w przypadku poważnego naruszenia Regulaminu lub w przypadku ukarania na podstawie §53 Statutu.
+	\item Odwołanie Komisarza stwierdza Marszałek Senatu na podstawie uchwały Senatu precyzującej zarzuty wobec Komisarza oraz opinii Opiekuna Samorządu potwierdzającej te zarzuty.
+\end{ustepy}
+\subsection*{Artykuł 31 - Prawa członków Rządu}
+Członek Rządu ma prawo:
+\begin{podpunkty}
+	\item prowadzić w imieniu Samorządu działalność na terenie Szkoły;
+	\item występować na forum Senatu;
+	\item wykonywać inne uprawnienia przekazane mu przez Prezydenta Samorządu;
+	\item złożyć rezygnację.
+\end{podpunkty}
+\subsection*{Artykuł 32}
+Urzędowanie wszystkich członków Rządu wygasa w dniu objęcia funkcji przez nowego Prezydenta Samorządu.
+\subsection*{Artykuł 33}
+Senat i Rząd współpracują w celu:
+ustalenia kierunków rozwoju Samorządu;
+planowania, organizowania i nadzorowania przebiegu różnorodnych wydarzeń szkolnych, takich jak dni tematyczne, dni otwarte, konkursy i festiwale.
+\newpage
+\section{Rzecznik Praw Ucznia}
+\subsection*{Artykuł 34}
+Głównym zadaniem Rzecznika Praw Ucznia jest dbanie o przestrzeganie i egzekwowanie praw ucznia w Szkole.
+\subsection*{Artykuł 35}
+Celem działania Rzecznika Praw Ucznia jest przeciwdziałanie łamaniu praw uczniów w szkole poprzez:
+\begin{podpunkty}
+	\item zwiększanie wiedzy oraz świadomości prawnej wśród uczniów i nauczycieli na temat praw ucznia;
+	\item wspomaganie uczniów w egzekwowaniu swoich praw, np. poprzez zgłaszanie naruszeń do dyrekcji Szkoły;
+	\item opiniowanie, na prośbę ucznia, każdego odwołania lub skargi, która dotyczy naruszenia praw ucznia; dotyczy to również skarg do Kuratora Oświaty;
+	\item proponowanie nowych uchwał dotyczących praw uczniów;
+	\item pomaganie w rozstrzyganiu konfliktów pomiędzy uczniami lub między uczniami a pracownikami Szkoły;
+	\item uczestniczenie w roli członka w obradach Trybunału Regulaminowego;
+	\item prawo do wnioskowania o zwołanie nadzwyczajnego posiedzenia Senatu;
+	\item możliwość opiniowania uchwał Senatu na wniosek co najmniej 3 Senatorów, Marszałka Senatu lub z własnej inicjatywy;
+	\item prawo do złożenia rezygnacji ze swojego urzędu.
+\end{podpunkty}
+\subsection*{Artykuł 36}
+\begin{ustepy}
+	\item W trakcie pierwszego posiedzenia Senatu w danym roku szkolnym zostanie ogłoszony nabór na stanowisko Rzecznika Praw Ucznia.
+	\item Rzecznikiem Praw Ucznia może zostać uczeń lub nauczyciel Szkoły.
+	\item Rzecznikiem Praw Ucznia nie może zostać Prezydent Samorządu, Marszałek Senatu oraz Dyrektor Szkoły.
+	\item Kandydaci na urząd Rzecznika Praw Ucznia zgłaszają się do Prezydenta Samorządu osobiście lub za pośrednictwem Senatora.
+	\item Senat spośród kandydatów wybiera Rzecznika Praw Ucznia zwykłą większością głosów przy obecności co najmniej połowy Senatorów.
+	\item Wybór Rzecznika Praw Ucznia przeprowadza się w trakcie posiedzenia Senatu nie wcześniej niż tydzień i nie później niż 3 tygodnie po ogłoszeniu naboru na stanowisko Rzecznika Praw Ucznia.
+	\item Następnie przeprowadzane jest Referendum w celu akceptacji Rzecznika Praw Ucznia.
+	\item Jeżeli Rzecznik Praw Ucznia nie zostanie zaakceptowany, procedura jest powtarzana.
+	\item W przypadku braku kandydatów stanowisko Rzecznika Praw Ucznia pozostaje nieobsadzone do momentu zgłoszenia się kandydata zgodnie z ust. 4. 
+	\end{ustepy}
+\subsection*{Artykuł 37}
+\begin{ustepy}
+	\item Rzecznik Praw Ucznia może być odwołany uchwałą Senatu na wniosek Marszałka Senatu, co najmniej 6 senatorów lub grupy 60 uczniów. Głosowanie na forum Senatu odbywa się większością \(\frac{2}{3}\) głosów. Wniosek o podjęcie uchwały Senatu w sprawie odwołania Rzecznika Praw Ucznia musi zostać poddany pod głosowanie w ciągu 4 dni roboczych od złożenia wniosku.
+	\item Powtórny wniosek o podjęcie uchwały Senatu w sprawie odwołania Rzecznika Praw Ucznia może być zgłoszony nie wcześniej niż po upływie 1 miesiąca od dnia zgłoszenia poprzedniego wniosku.
+\end{ustepy}
+\subsection*{Artykuł 38}
+\begin{ustepy}
+	\item W przypadku rezygnacji albo odwołania Rzecznika Praw Ucznia ze swojego stanowiska Senat ma obowiązek przeprowadzić ponowne wybory rzecznika w przeciągu miesiąca od odwołania lub rezygnacji.
+	\item Senatorzy mają obowiązek przekazać uczniom swoich klas informację o wakacie na urzędzie Rzecznika Praw Ucznia oraz o ponownych wyborach na to stanowisko.
+	\item Nowi kandydaci zgłaszają się do Marszałka Senatu osobiście lub za pośrednictwem Senatora.
+	\item Jeżeli nie ma kandydata na objęcie urzędu Rzecznika Praw Ucznia lub żaden z kandydatów nie został zaakceptowany przez Senat, stanowisko to pozostaje nieobsadzone do momentu zgłoszenia się osoby, której kandydatura zostanie pozytywnie rozpatrzona przez Senat.
+\end{ustepy}
+\newpage
+\section{Opiekun Samorządu}
+\subsection*{Artykuł 39}
+Opiekun Samorządu sprawuje ogólną opiekę nad działalnością organów Samorządu i wspiera ich pracę. Może pośredniczyć w kontaktach organów Samorządu z Dyrektorem Szkoły, Radą Pedagogiczną oraz innymi instytucjami.
+\subsection*{Artykuł 40}
+\begin{ustepy}
+	\item Samorząd Uczniowski nie ma obowiązku powoływać Opiekuna Samorządu.
+	\item Senat wybiera Opiekuna Samorządu spośród chętnych nauczycieli w drodze uchwały.
+	\item Wybór Opiekuna Samorządu jest potwierdzony poprzez głosowanie zwykłą większością głosów przy obecności co najmniej połowy Senatorów.
+	\item Głosowanie w tej kwestii odbywa się w trakcie pierwszego posiedzenia Senatu w danym roku szkolnym. 
+	\item Możliwy jest wybór większej liczby Opiekunów Senatu niż jeden. W tej sytuacji Opiekunowie Senatu dzielą swoje obowiązki między sobą według własnych ustaleń.
+\end{ustepy}
+\subsection*{Artykuł 41}
+Opiekun Samorządu ma prawo:
+\begin{podpunkty}
+	\item uczestniczyć w posiedzeniach Senatu z prawem głosu doradczego;
+	\item inspirować uczniów do aktywności społecznej;
+	\item dbać o kwestie formalne i prawne oraz wspierać Samorząd w kontaktach z Radą Pedagogiczną i Dyrektorem; 
+	\item otrzymywać od Prezydenta Samorządu informacje o pracy Rządu;
+	\item złożyć rezygnację.
+\end{podpunkty}
+
+\subsection*{Artykuł 42}
+\begin{ustepy}
+	\item Opiekun Samorządu może być odwołany uchwałą Senatu na wniosek Marszałka Senatu, Prezydenta Samorządu, co najmniej 5 senatorów, lub grupy 50 uczniów. Głosowanie na forum Senatu odbywa się zwykłą większością głosów.
+	\item Wniosek o podjęcie uchwały Senatu w sprawie odwołania Opiekuna Samorządu musi zostać poddany pod głosowanie w ciągu 4 dni roboczych od złożenia wniosku. W przeciwnym razie wniosek uważa się za odrzucony przez Senat.
+	\item W przypadku rezygnacji lub odwołania Opiekuna Samorządu ze swego stanowiska Senat wybiera nowego Opiekuna zgodnie z art. 40.
+\end{ustepy}
+
+\subsection*{Artykuł 43}
+W przypadku braku kandydatów na objęcie funkcji Opiekuna Samorządu stanowisko to pozostaje nieobsadzone do momentu zgłoszenia się osoby, której kandydatura zostanie pozytywnie rozpatrzona przez Senat.
+\newpage
+\section{Zmiana Regulaminu}
+\subsection*{Artykuł 44}
+\begin{ustepy}
+	\item Projekt uchwały o zmianie Regulaminu może przedłożyć Marszałek Senatu, Prezydent Samorządu, grupa przynajmniej 5 senatorów lub 50 uczniów.
+	\item Senat podejmuje uchwałę zmieniającą Regulamin, nie wcześniej niż 15 dni od dnia złożenia wniosku.
+	\item Uchwała zmieniająca Regulamin jest uchwałą o szczególnym znaczeniu.
+	\item Po pozytywnym przegłosowaniu przez Senat uchwały o zmianie Regulaminu należy przeprowadzić Referendum zatwierdzające nowy Regulamin w terminie 7 dni od podjęcia uchwały zmieniającej Regulamin.
+	\item Zmiana Regulaminu zostaje przyjęta, jeżeli za tą zmianą opowiedziała się większość głosujących uczniów.
+	\item Przepisy o Referendum uczniowskim stosuje się odpowiednio.
+\end{ustepy}
+\section{Przepisy przejściowe i końcowe}
+\subsection*{Artykuł 45}
+\begin{ustepy}
+	\item Dotychczasowy Prezydent Samorządu wybrany na podstawie Regulaminu Samorządu w brzmieniu z 13 grudnia 2019 r. staje się Prezydentem w rozumieniu Regulaminu.
+	\item Dotychczasowi Komisarze powołani na podstawie Regulaminu Samorządu w brzmieniu z 13 grudnia 2019 r. zasiadający w Rządzie stają się Komisarzami w rozumieniu Regulaminu.
+	\item Osoby pełniące funkcje Senatorów zachowują swoje mandaty.
+	\item Dotychczasowy Marszałek Senatu wybrany na podstawie Regulaminu Samorządu w brzmieniu z 13 grudnia 2019 r. staje się Marszałkiem Senatu w rozumieniu Regulaminu. Kadencja Marszałka Senatu jak stanowi art. 11 ust. 10 tego Regulaminu upływa z dniem zakończenia obecnego roku szkolnego.
+	\item Dotychczasowy Sekretarz Samorządu, w rozumieniu Regulaminu Samorządu w brzmieniu z 13 grudnia 2019 r. zostaje odwołany.
+	\item Nowy Sekretarz Samorządu powinien zostać wybrany w ciągu 14 dni roboczych w trybie przewidzianym w art. 12 ust. 7 i 9.
+	\item W ciągu 14 dni roboczych powinien zostać ogłoszony nabór na Rzecznika Praw Ucznia w trybie przewidzianym w art. 36 ust. 4-9.
+\end{ustepy}
+\subsection*{Artykuł 46}
+\begin{ustepy}
+	\item Wraz z wejściem w życie niniejszego Regulaminu traci moc Regulamin Senatu z 20 maja 2019 r.
+	\item Wraz z wejściem w życie niniejszego Regulaminu traci moc Regulamin Samorządu Uczniowskiego z 13 grudnia 2019 r.
+	\item Wszystkie inne akty urzędowe dotychczasowych organów Samorządu wygasają z dniem wejścia w życie Regulaminu i tracą moc prawną.
+\end{ustepy}
+\subsection*{Artykuł 47}
+Regulamin wchodzi w życie po akceptacji poprzez Referendum ogólnoszkolne, z dniem publikacji na stronie internetowej Szkoły wraz z wynikami Referendum.
+
+	
+\end{document}
+
+
